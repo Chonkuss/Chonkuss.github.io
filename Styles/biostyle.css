@@ -1,0 +1,38 @@
+h1 {
+    color: blueviolet;
+    background-color: aquamarine;
+    padding: 0.5cm;
+    text-align: center;
+}
+p {
+    text-align: center;
+}
+footer {
+    background-color: aquamarine;
+    padding: 1.1cm;
+    text-align: center;
+    color: blueviolet;
+
+}
+body {
+    text-align: center;
+    align-items: center;
+    background-color: blueviolet;
+    color: rgb(255, 255, 255);
+}
+h2 {
+    background-color: aquamarine;
+    color: blueviolet;
+}
+body {
+    font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+}
+footer {
+   font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+}
+img {
+     margin-bottom: 0.5cm;
+    margin-top: 0.5cm;
+}

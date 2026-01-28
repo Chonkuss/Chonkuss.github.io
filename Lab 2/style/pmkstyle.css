@@ -1,0 +1,65 @@
+/*
+
+* {
+    outline: 1px solid rgb(255, 0, 0);
+}
+*\ this section is for if IG?
+
+*/
+
+h1 {
+    color: rgb(255, 255, 255);
+}
+p {
+    color: #ae6000;
+}
+h1 {
+    font-family: "Gravitas One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  margin-top: 0.1cm;
+  margin-bottom: 0.1cm;
+}
+h1 {
+    background-color: #8d5b14;
+    padding: 0.3cm;
+    font-size: 300%;
+    text-align: center;
+    margin-bottom: 0cm;
+}
+h3 {
+    background-color: rgb(255, 165, 69);
+    text-align: center;
+    margin-top: 0cm;
+    font-size: 250%;
+    padding-bottom: 0.4cm;
+    padding-top: 0.4cm;
+    margin-bottom: 0cm;
+}
+img {
+    text-align: center;
+}
+h3 a {
+  color: white;
+  text-decoration: none;
+  margin: 0.8cm;
+}
+
+
+h3 a:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+footer > p {
+    background-color: #8d5b14;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-bottom: 5cm;
+    padding-top: 0.5cm;
+    margin-top: 0cm;
+    
+}
