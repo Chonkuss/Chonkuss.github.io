@@ -15,10 +15,21 @@ body {
 }
 
 footer {
-    background-color: beige;
+    background-color: rgb(186, 186, 186);
     padding: 2cm;
     text-align: center;
+    margin-top: 1cm;
 }
 h2 {
     margin-bottom: 8cm;
+}
+h3 a {
+  color: rgb(34, 0, 255);
+  text-decoration: none;
+  margin-bottom: 10ch;
+  font-size: 4ch;
+}
+h3 a:hover {
+  text-decoration: underline;
+  opacity: 0.8;
 }

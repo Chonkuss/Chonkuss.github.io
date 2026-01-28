@@ -43,3 +43,56 @@ body {
 
     color: orange;
 }
+footer {
+    background-color: rgb(110, 110, 110);
+    color: white;
+    padding-bottom: 2cm;
+    padding-top: 1cm;
+    margin-top: 2cm;
+    font-size: 0.35cm;
+}
+body {
+    background-color: rgb(229, 229, 229);
+}
+iframe {
+    background-color: rgb(110, 110, 110);
+    padding-left: 3cm;
+    padding-right: 3cm;
+    margin-bottom: 4cm;
+    padding-bottom: 0.5cm;
+    padding-top: 0.5cm;
+}
+.heading-one {
+    font-family: "regrets-minor", sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+.heading-two {
+    font-family: "jetsam-collection-teeshee", sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+.heading-three {
+    font-family: "riant-display", sans-serif;
+font-weight: 500;
+font-style: normal;
+}
+.heading-four {
+    font-family: "jetsam-collection-basilea", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 1.5cm;
+}
+.heading-five {
+    font-family: "yerk-slant", sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+.heading-six {
+    font-family: "riant-display-inline", sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+.margin-bottom {
+    margin-top: 3.5cm;
+}
