@@ -1,6 +1,6 @@
 h1 {
-    color: blueviolet;
-    background-color: aquamarine;
+    color: rgb(255, 255, 255);
+    background-color: rgb(146, 146, 146);
     padding: 0.5cm;
     text-align: center;
 }
@@ -8,21 +8,21 @@ p {
     text-align: center;
 }
 footer {
-    background-color: aquamarine;
+    background-color: rgba(255, 255, 255, 0);
     padding: 1.1cm;
     text-align: center;
-    color: blueviolet;
+    color: rgb(63, 63, 63);
 
 }
 body {
     text-align: center;
     align-items: center;
-    background-color: blueviolet;
+    background-color: rgb(146, 146, 146);
     color: rgb(255, 255, 255);
 }
 h2 {
-    background-color: aquamarine;
-    color: blueviolet;
+    background-color: rgb(146, 146, 146);
+    color: rgb(255, 255, 255);
 }
 body {
     font-family: 'Oswald', sans-serif;
@@ -31,8 +31,12 @@ body {
 footer {
    font-family: 'Oswald', sans-serif;
   font-weight: 300;
+  background-color: rgb(255, 255, 255);
+  margin-top: 2cm;
 }
 img {
      margin-bottom: 0.5cm;
     margin-top: 0.5cm;
+    background-color: rgb(66, 66, 66);
+    padding: 1.5cm;
 }
