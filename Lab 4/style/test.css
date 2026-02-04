@@ -1,0 +1,161 @@
+h2 {
+    margin: 10%;
+    color: rgb(87, 87, 87);
+    text-align: center;
+    justify-self: center;
+    font-size: 100px;
+    background-size: 100%;
+    background-color: antiquewhite;
+    margin-top: 2cm;
+    margin-bottom: -1cm;
+}
+
+#parent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 5%;
+}
+
+#parent div {
+    min-height: 400px;
+    font-size: 82px;
+    padding: 10px;
+    text-align: center;
+    align-content: center;
+}
+.america {
+    color: white;
+    order: 1;
+    background-color: rgb(255, 0, 0);
+    background-image: url(https://media2.giphy.com/media/v1.Y2lkPTZjMDliOTUyeTN4a3owcDk0MnN1Y3p4eTRmY2k0ajIxcXJqa3NmdGN3dDBqOWJibyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/sFMDqop2ku4M0/giphy.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 500px;
+}
+.france {
+    color: black;
+    order: 4;
+       background-color: rgb(255, 0, 0);
+    background-image: url(https://virtualfestivalofsongs.wordpress.com/wp-content/uploads/2018/07/french-flag-waving-animated-gif-19.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 300px;
+    max-height: 300px;
+}
+.canada {
+    color: white;
+    order: 2;
+          background-color: rgb(255, 0, 0);
+    background-image: url(https://i.pinimg.com/originals/8d/56/3c/8d563cd6091b28c437c29245815319f9.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 350px;
+    max-height: 350px;
+}
+.brazil {
+    color: white;
+    order: 3;
+          background-color: rgb(15, 71, 0);
+          background-image: url(https://media0.giphy.com/media/v1.Y2lkPTZjMDliOTUycXdodDQ5eTI5ZWVxMzg4bmZ2c2Q4bG5yZnRrZGxvYXljZnYyaTRrMiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/bIqdxoOVJ2oak/200w.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-grow: 8;
+    flex-shrink: 4;
+    flex-basis: 450px;
+    max-height: 450px;
+}
+.uk {
+    color: white;
+    order: 5;
+          background-color: rgb(255, 0, 0);
+    background-image: url(https://i.pinimg.com/originals/8b/b6/5d/8bb65d77cd7e8ce7cc03e16ee1fe0dd4.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 375px;
+    max-height: 375px;
+}
+.egypt {
+    color: rgb(218, 0, 0);
+    order: 6;
+              background-color: rgb(255, 0, 0);
+    background-image: url(https://i.pinimg.com/originals/49/c9/ab/49c9ab6bcdb9f17bd330799c139cbcb3.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 275px;
+    max-height: 275px;
+}
+img {
+    max-width: 100%;
+    max-width: 100%;
+}
+.canada div {
+    width: 50%;
+}
+.america div {
+    width: 100%;
+}
+.brazil2 {
+    color: white;
+    width: 30%;
+        background-image: url(https://media0.giphy.com/media/v1.Y2lkPTZjMDliOTUycXdodDQ5eTI5ZWVxMzg4bmZ2c2Q4bG5yZnRrZGxvYXljZnYyaTRrMiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/bIqdxoOVJ2oak/200w.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 300px;
+}
+.skeleton {
+    font-size: xx-large;
+    color: rgb(255, 255, 255);
+    order: 6;
+              background-color: rgb(255, 0, 0);
+    background-image: url(https://media1.tenor.com/m/HNObdUglgfgAAAAC/skeleton-banging-shield.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-grow: 2;
+    flex-shrink: 1;
+    flex-basis: 300px;
+    width: 100%;
+    height: 700px;
+}
+.chad {
+    color: blue;
+    order: 9;
+              background-color: rgb(255, 255, 255);
+    background-image: url(https://media0.giphy.com/media/v1.Y2lkPTZjMDliOTUybXg5bTNueTlzN2FpaXV5MWFjMXR2dnU5N3NtZG80ZmpqcDZpNDZqOCZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/EVk0TfdFqc8pYcU4TZ/200.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-grow: 2;
+    flex-shrink: 1;
+    flex-basis: 300px;
+    width: 100%;
+    height: 700px;
+}
+footer {
+    font-size: 12px;
+    color: white;
+    background-color: rgb(94, 94, 94);
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 56px;
+}
