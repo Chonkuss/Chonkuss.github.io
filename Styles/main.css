@@ -1,10 +1,10 @@
 h1 {
     color: rgb(255, 255, 255);
-    background-color: rgb(183, 183, 183);
+    background-color: rgb(65, 65, 65);
     text-align: center;
     padding: 2cm;
     font-size: 3cm;
-    margin-bottom: 0.5cm;
+    margin-bottom: 1cm;
     margin-top: 0cm;
 }
 
@@ -12,19 +12,25 @@ body {
     text-align: center;
     font-family: 'Oswald', sans-serif;
     font-weight: 300;
+    background-color: rgb(143, 143, 143);
+    color: white;
 }
 
 footer {
-    background-color: rgb(186, 186, 186);
+    color: rgb(255, 255, 255);
+    background-color: rgb(65, 65, 65);
     padding: 2cm;
+    margin-bottom: 0px;
     text-align: center;
     margin-top: 1cm;
+    margin-bottom: 0cm;
 }
 h2 {
-    margin-bottom: 8cm;
+    margin-bottom: 2cm;
 }
 h3 a {
-  color: rgb(34, 0, 255);
+    margin-top: 24px;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   margin-bottom: 10ch;
   font-size: 4ch;
@@ -32,4 +38,18 @@ h3 a {
 h3 a:hover {
   text-decoration: underline;
   opacity: 0.8;
+  color: azure;
+}
+.image {
+    margin: auto;
+    display: flex;
+    height: 300px;
+    width: 30%;
+    padding: 25px;
+    background: rgb(59, 59, 59);
+    background-image: url(https://media1.tenor.com/m/HNObdUglgfgAAAAC/skeleton-banging-shield.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 25%;
 }

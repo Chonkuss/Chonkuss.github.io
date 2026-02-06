@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: system-ui, sans-serif;
+}
+
+body {
+    display: flex;
+    background: rgb(212, 212, 212);
+    justify-content: center;
+    align-content: center;
+    padding-top: 100px;
+}
+
+.page {
+    min-height: 200px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+}
+
+.postimg {
+    width: 100%;
+    height: 400px;
+    background: rgb(177, 177, 177);
+    background-image: url(https://imgs.search.brave.com/SJ-hFWofIc8R70MBQizMzAU4XgLpUwnQP4KLdouBjVA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS50ZW5vci5jb20v/N2JWZXQ3cEpmanNB/QUFBTS9kai1raGFs/ZWQuZ2lm.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.postcard {
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgb(59, 59, 59);
+    background-image: url(https://media1.tenor.com/m/HNObdUglgfgAAAAC/skeleton-banging-shield.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.userinfo {
+    display: flex;
+    flex-direction: column;
+    font-size: 11px;
+}
+.name {
+    font-weight: 600;
+}
+.location {
+    color: rgb(0, 59, 25);
+}
+.menu {
+    font-size: 32px;
+    cursor: pointer;
+    color: rgb(43, 43, 43);
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    background: grey;
+    border-radius: 20%;
+    cursor: pointer;
+}
+.likeicon {
+    display: flex;
+    gap: 10px;
+}
+.icons {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.title {
+    font-size: 11px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+.more {
+    color: rgb(160, 160, 160);
+    cursor: pointer;
+    font-size: 10px;
+}
+.content {
+    font-size: 11px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+}
