@@ -20,7 +20,7 @@ body {
 }
 
 footer {
-   position: fixed;
+   position: static;
   bottom: 0;
   width: 100%;
   font-size: 12px;
@@ -34,18 +34,25 @@ h2 {
     margin-bottom: 2cm;
 }
 h3 a {
-    margin-top: 24px;
-    margin-bottom: 24px;
+    margin: 30px;
   color: rgb(255, 255, 255);
   text-decoration: none;
   margin-bottom: 10ch;
   font-size: 4ch;
+  
 }
 h3 a:hover {
   text-decoration: underline;
   opacity: 0.8;
   color: azure;
+  margin: 30px;
 }
+
+p {
+    margin: 10px;
+
+}
+
 .image {
     margin: auto;
     display: flex;
