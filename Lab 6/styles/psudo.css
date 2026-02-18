@@ -1,14 +1,18 @@
 :root {
     font-size: 18pt;
+    font-family: "pf-fuel-grime", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 
 body {
+    height: 100vh;
     margin: 0;
     display: flex;
     flex-direction: column;
-    background-color: brown;
-    background-image: url(https://i.pinimg.com/originals/2d/d1/f0/2dd1f0d601311527c878a67b6d74226b.gif);
+    background-color: rgb(255, 0, 0);
+    background-image: url(https://imgs.search.brave.com/wfX0SFm-KMP8bBpD6P3Yk2Vz-bZ3Krg-uAg8V2HCOQQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9naWZk/Yi5jb20vaW1hZ2Vz/L2hpZ2gvdmFsb3Jh/bnQtYWdlbnQtdmlw/ZXItZ3VuLXQ3amdo/bDgweHBwaHh1cWYu/Z2lm.gif);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -19,7 +23,7 @@ header, nav, main, footer {
 }
 
 header {
-    background-color: rgb(142, 0, 0);
+    background-color: rgb(0, 173, 9);
     height: 200px;
     font-size: 3rem;
     color: white;
@@ -30,7 +34,7 @@ header {
 }
 
 nav {
-    background-color: rgb(39, 26, 26);
+    background-color: rgb(23, 46, 25, 0.9);
     height: 100px;
     display: flex;
     flex-direction: row;
@@ -58,7 +62,7 @@ nav a:link {
 
 nav a:hover {
 
-    background-color: rgb(91, 50, 50);
+    background-color: rgb(94, 94, 94);
     color: rgb(255, 255, 255);
     transform: scale(1.5);
    
@@ -75,15 +79,16 @@ nav a:focus {
 }
 
 main {
-    background-color: rgb(39, 26, 26);
+    background-color: rgb(39, 26, 26, 0.0);
     display: flex;
     flex-direction: row;
     gap: 0px;
 }
 
 aside {
-    background-blend-mode: soft-light;
-    background-color: rgb(154, 0, 0);
+    background-color: rgb(23, 46, 25, 0.9);
+    font-display: auto;
+    font-size: 42px;
     width: 350px;
     height: 850px; 
     padding: 15px;
@@ -106,14 +111,16 @@ aside a:hover{
 }
 
 .stats {
+    color: white;
     display: flex;
     flex-wrap: wrap;
     flex-grow: 1;
     min-height: 50px;
     min-width: 50px;
-    height: 200px;
-    width: 200px;
-    background-color: rgb(169, 169, 169);
+    height: 150px;
+    width: 150px;
+    background-color: rgba(255, 187, 187, 0.2);
+    border-radius: 30px;
     justify-content: center;
     align-items: center;
     padding: 10px;
@@ -126,19 +133,19 @@ aside a:hover{
 }
 
 .stats:hover {
-    background-color: rgb(103, 0, 0);
+    background-color: rgb(5, 56, 0);
     color: white;
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 article {
     display: flex;
     flex-wrap: wrap;
     flex-grow: 1;
-    background-color: rgb(95, 95, 95); 
+    background-color: rgba(255, 255, 255, 0); 
     flex-grow: 4; 
-    align-content: flex-start;
-    justify-items: flex-start;
+    align-content: flex-end;
+    justify-items: normal;
     max-height: 1000px;
     gap: 20px;
 }
