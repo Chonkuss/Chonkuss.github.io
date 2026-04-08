@@ -80,18 +80,22 @@ a {
     transition: transform 0.5s ease-in-out;
 }
 a:hover {
-    color: rgb(255, 255, 255);
+    color: rgb(183, 0, 255);
     text-transform: uppercase;
 }
 .line {
     background-color: rgba(0, 110, 255, 0.205);
 }
 .middle {
-    overflow-x: hidden;
-    padding-left: 100px;
+  display: flex;
+  flex-flow: column;
+  flex-grow: 1;
+  min-height: 100vh;
+  width: 30%;
+  background-color: rgba(0, 0, 0, 0.801);
+    padding-left: 50px;
     position: sticky;
     top: 0;
-    height: calc(100vh - var(--header-height) - var(--footer-height));
     overflow-y: auto;
     font-size: 24px;
 }
@@ -100,6 +104,7 @@ a:hover {
     line-height: 1.4;
     text-align: left;
     padding-left: 16px;
+    padding-top: 16px;
     border-left: 2px solid transparent;
 }
 .middle p:hover {
