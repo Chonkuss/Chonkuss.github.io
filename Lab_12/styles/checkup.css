@@ -1,11 +1,15 @@
 * {
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     font-size: 24px;
     font-family: "itc-avant-garde-gothic-pro", sans-serif;
     font-weight: 100;
     font-style: normal;
 }
-body {overflow-x: hidden; background-color: rgb(21, 21, 21);}
+body {overflow-x: hidden; background-color: rgb(21, 21, 21);
+background-image: url(https://images.unsplash.com/photo-1776002106841-0f81d30d3b0e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNDZ8fHxlbnwwfHx8fHw%3D);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;}
 
 .flexH {display: flex; flex-direction: row;}
 
@@ -61,12 +65,12 @@ section#poster {
 }
 
 #carousel-wrapper > div:nth-of-type(even) {
-    background-color: rgb(0, 221, 255);
+    background-color: rgb(255, 242, 0);
     text-align: center;
     align-content: center;
 }
 #carousel-wrapper > div:nth-of-type(odd) {
-    background-color: rgb(166, 0, 255);
+    background-color: rgb(103, 206, 0);
     text-align: center;
     align-content: center;
 }
@@ -85,8 +89,16 @@ section#poster {
         grid-column: 2;
         grid-row: 1;
     }
-
-    
+    #students {
+        grid-template-columns: repeat(1, 1fr 4fr 1fr);
+        .student-grid{
+            grid-column: 2;
+            grid-row: 1;
+        }
+    }
+    #student-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 #carousel-wrapperdiff {
@@ -106,12 +118,174 @@ section#poster {
 }
 
 #carousel-wrapperdiff > div:nth-of-type(even) {
-    background-color: rgb(0, 46, 84);
+    background-color: rgb(146, 139, 0);
     text-align: center;
     align-content: center;
 }
 #carousel-wrapperdiff > div:nth-of-type(odd) {
-    background-color: rgb(57, 0, 87);
+    background-color: rgb(85, 127, 0);
     text-align: center;
     align-content: center;
 }
+
+
+
+:root {
+    
+    font-size: 18pt;
+    --primaryColor: rgb(149, 0, 255);
+    --secondaryColor: rgb(255, 255, 255);
+
+    --h1FontSize: 2rem;
+    --headingFF: "Roca";
+
+    --cardPadding: 10px;
+    --containerPadding: 20px;
+
+    --gridGap: 20px;
+}
+p {
+    font-size: 12px;
+}
+h1 {
+    padding: 10px;
+    font-size: 60px;
+    position: sticky;
+    text-align: center;
+    font-family: "itc-avant-garde-gothic-pro", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+#students {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: var(--gridGap);
+    background-image: url(https://images.unsplash.com/photo-1776002106841-0f81d30d3b0e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNDZ8fHxlbnwwfHx8fHw%3D);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: var(--containerPadding);
+}
+
+#student-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: var(--gridGap);
+    border-radius: 4%;
+    background-color: rgb(255, 221, 0);
+    padding: var(--containerPadding);
+}
+
+#student-grid > div {
+    border-radius: 10%;
+    background-color: var(--secondaryColor);
+    padding: var(--cardPadding);
+}
+
+.img-placeholder {
+
+    width: 100%;
+    height: 200px;
+    background-image: url(https://media.tenor.com/lwScjCRTln8AAAAM/smile-and.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10%;
+}
+
+@media screen and (min-width: 768px) {
+
+    #student-grid {
+
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+
+}
+
+
+@media screen and (min-width: 992px) {
+
+
+    section#poster {
+
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+
+}
+
+    section#poster > div {
+
+    grid-column: 2;
+    grid-row: 1;
+
+    }
+
+    #students { grid-template-columns: auto 4fr 1fr; }
+
+    #student-grid {
+
+        grid-column: 2;
+        grid-row: 1;
+
+    }
+    #students > h1 {
+        grid-column: 1;
+        grid-row: 1;
+
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+
+        text-align: center;
+        align-self: start;
+    }
+
+    
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 100vw;
+    background-color: rgb(255, 242, 0);
+}
+h2, p {
+    color: black;
+    margin: 12px;
+}
+
+#header > h1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    font-size: 75px;
+    text-align: left;
+    margin-left: 30px;
+}
+#students > h1 {
+    font-size: 90px;
+    outline: 5px solid rgb(255, 255, 255);
+    box-sizing: border-box;
+}
+
+#header > div {
+    outline: 5px solid black;
+    box-sizing: border-box;
+}
+
+.links {
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+    margin-right: 50px;
+}
+
+.links a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
