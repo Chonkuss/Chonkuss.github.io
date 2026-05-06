@@ -1,49 +1,520 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laken Clark</title>
-    <link rel="stylesheet" href="Styles/portfolio.css">
-    <link rel="stylesheet" href="https://use.typekit.net/cir0mbu.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laken Clark</title>
+  <link rel="stylesheet" href="Styles/portfolio.css">
 </head>
 <body>
-        <main class="container">
 
-  <section id="home" class="section">
-    <h2>Home</h2>
+  <canvas id="galaxy"></canvas>
 
-    <a href="#design" class="planet medium purple"></a>
-    <a href="#fineart" class="planet medium white"></a>
-    <a href="#about" class="planet small lightblue"></a>
+  <div class="bg-planet bg-planet--design"></div>
+  <div class="bg-planet bg-planet--fineart"></div>
+  <div class="bg-planet bg-planet--about"></div>
+
+  <a class="back-btn" href="#page-home">&#8592; Back</a>
+
+  <div id="intro">
+    <a class="intro-name" href="#intro">Laken Clark</a>
+    <p class="intro-tagline">Designer &nbsp;&middot;&nbsp; Artist &nbsp;&middot;&nbsp; Creator</p>
+    <a class="intro-enter" href="#page-home">
+      <span class="intro-enter-text">enter</span>
+      <div class="enter-line"></div>
+    </a>
+  </div>
+
+  <section class="page" id="page-home">
+
+    <a class="intro-back" href="#intro">
+      <div class="back-line"></div>
+      <span class="intro-back-text">back</span>
+    </a>
+
+    <div class="orrery">
+      <div class="orrery-ring"></div>
+
+      <div class="planet-carrier" style="--delay: 0s;">
+        <div class="planet-node">
+          <div class="planet-upright" style="--delay: 0s;">
+            <a class="planet-link" href="#page-design">
+              <div class="planet-orb orb-design"></div>
+              <span class="planet-label">Design</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="planet-carrier" style="--delay: -10.67s;">
+        <div class="planet-node">
+          <div class="planet-upright" style="--delay: -10.67s;">
+            <a class="planet-link" href="#page-fineart">
+              <div class="planet-orb orb-art"></div>
+              <span class="planet-label">Fine Art</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="planet-carrier" style="--delay: -21.33s;">
+        <div class="planet-node">
+          <div class="planet-upright" style="--delay: -21.33s;">
+            <a class="planet-link" href="#page-about">
+              <div class="planet-orb orb-about"></div>
+              <span class="planet-label">About</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </section>
 
-  <section id="design" class="section">
-    <h2>Design</h2>
+  <section class="page" id="page-design">
+    <div class="page-inner">
+      <h2 class="section-title">Design</h2>
+      <p class="section-subtitle">Visual Communication &middot; Brand &middot; Type</p>
 
-    <div class="content"></div>
+      <div class="cards">
 
-    <a href="#home" class="planet small lightblue"></a>
-    <a href="#fineart" class="planet medium white"></a>
+        <a class="card" href="#detail-cc-collection">
+          <img src="image/Design/CCDOGILLUSTRATION.png" alt="Dog Illustration">
+          <div class="card-body">
+            <p class="card-title">High School Work</p>
+            <p class="card-meta">Illustration</p>
+          </div>
+        </a>
+
+        <a class="card" href="#detail-typography">
+          <img src="image/Design/Clark_TypePoster.webp" alt="Type Poster">
+          <div class="card-body">
+            <p class="card-title">Typography</p>
+            <p class="card-meta">Type focused work</p>
+          </div>
+        </a>
+
+        <a class="card" href="#detail-logo-projects">
+          <img src="image/Design/Identity/i1.webp" alt="Logo Projects">
+          <div class="card-body">
+            <p class="card-title">Branding Projects</p>
+            <p class="card-meta">Identity and logo design</p>
+          </div>
+        </a>
+
+        <a class="card" href="#detail-rebrand">
+          <img src="image/Design/Rebrand/r2.webp" alt="Rebrand Project">
+          <div class="card-body">
+            <p class="card-title">Rebrand Project</p>
+            <p class="card-meta">Design Bureau &middot; 2026</p>
+          </div>
+        </a>
+
+        <a class="card" href="#detail-starbridge">
+          <img src="image/Design/SHIRTFORDADETC.png" alt="Personal Projects">
+          <div class="card-body">
+            <p class="card-title">Personal Projects</p>
+          </div>
+        </a>
+
+      </div>
+    </div>
   </section>
 
-  <section id="fineart" class="section">
-    <h2>Fine Art</h2>
+  <section class="page" id="page-fineart">
+    <div class="page-inner">
+      <h2 class="section-title">Fine Art</h2>
+      <p class="section-subtitle">Painting &middot; Drawing &middot; Mixed Media</p>
 
-    <div class="content"></div>
+      <div class="cards">
 
-    <a href="#home" class="planet small blue"></a>
-    <a href="#about" class="planet medium lightblue"></a>
+        <a class="card" href="#detail-drawing">
+          <img src="image/Fine Art/DRAWING1FIRSTPROJECT.png" alt="Drawing">
+          <div class="card-body">
+            <p class="card-title">Drawing</p>
+            <p class="card-meta">Graphite</p>
+          </div>
+        </a>
+
+        <a class="card" href="#detail-figure-drawing">
+          <img src="image/Fine Art/FIGUREDRAWINGINNERSCARE.jpg" alt="Figure Drawing">
+          <div class="card-body">
+            <p class="card-title">Figure Drawing</p>
+            <p class="card-meta">Charcoal &middot; Anatomy &middot; Creative</p>
+          </div>
+        </a>
+
+        <a class="card" href="#detail-printmaking">
+          <img src="image/Fine Art/PRINTMAKINGALIEN.jpg" alt="Printmaking">
+          <div class="card-body">
+            <p class="card-title">Printmaking</p>
+            <p class="card-meta">Relief &middot; Ink &middot; Screen Print</p>
+          </div>
+        </a>
+
+        <a class="card" href="#detail-2d">
+          <img src="image/Fine Art/ACRYLICPORTRAIT.png" alt="2D Media">
+          <div class="card-body">
+            <p class="card-title">2D</p>
+            <p class="card-meta">Acrylic &middot; Design</p>
+          </div>
+        </a>
+
+        <a class="card" href="#detail-painting">
+          <img src="image/Fine Art/Clark_SelfPortraitOil.jpg" alt="Painting">
+          <div class="card-body">
+            <p class="card-title">Painting</p>
+            <p class="card-meta">Oil &middot; Canvas</p>
+          </div>
+        </a>
+
+      </div>
+    </div>
   </section>
 
-  <section id="about" class="section">
-    <h2>About Me</h2>
+  <section class="page" id="page-about">
+    <div class="page-inner">
+      <h2 class="section-title">About</h2>
+      <p class="section-subtitle">The person behind the work</p>
 
-    <div class="content"></div>
-
-    <a href="#home" class="planet large blue"></a>
+      <div class="about-inner">
+        <div class="about-photo">
+          <img src="image/Hopeitworks.png" alt="Laken Clark">
+        </div>
+        <div class="about-text">
+          <p>I'm Laken Clark, a Junior BFA Graphic Design student at <strong>Central Michigan University</strong>.</p>
+          <p>My work lives somewhere between all of the arts. I have always been infatuated with creative digital work, but I also have a deep love for traditional media. My fine art practice keeps my eye <strong>honest</strong>. Oil painting, charcoal figure drawing, printmaking, linocut — I've learned a ton about <strong>contrast</strong> and <strong>weight</strong> from the press and a pencil and that carries into everything I design.</p>
+          <p>I'm drawn to work that's dark, deliberate, and precise. High contrast. Built to last. Long term, I want to own a print shop — the kind where craft and design aren't in opposition.
+            Until then, I'm making the work.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
-</main>
+  <div class="detail-overlay" id="detail-cc-collection">
+    <div class="detail-top">
+      <a class="back-link" href="#page-design">&#8592; Back</a>
+      <h2>High School Work</h2>
+      <p class="detail-meta">Illustration &middot; 2024</p>
+    </div>
+    <div class="detail-layout">
+      <div class="detail-gallery">
+        <img src="image/Design/CCDOGILLUSTRATION.png" alt="Dog Illustration">
+        <img src="image/Design/CCFUNILLUSTRATION.png" alt="Fun Illustration">
+        <img src="image/Design/CCILLUSTRATORPORTRAIT.png" alt="Illustrator Portrait">
+        <img src="image/Design/CCSHIRTGRAPHIC.png" alt="Shirt Graphic">
+        <img src="image/Design/SHIRTFORDADETC.png" alt="Shirt Design">
+      </div>
+      <div class="detail-info">
+        <p>A collection of illustrative work I created during highschool that I enjoy to look back on</p>
+        <div class="tags">
+          <span>Illustration</span>
+          <span>Character</span>
+          <span>Graphic</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="detail-overlay" id="detail-typography">
+    <div class="detail-top">
+      <a class="back-link" href="#page-design">&#8592; Back</a>
+      <h2>Typography</h2>
+      <p class="detail-meta">Type &middot; 2024</p>
+    </div>
+    <div class="detail-layout">
+      <div class="detail-gallery">
+        <img src="image/Design/Clark_Synox!.jpg" alt="Synox Typeface">
+        <img src="image/Design/Clark_TypefacePrint.png" alt="Typeface Print">
+        <img src="image/Design/Clark_GridBookletFinal.jpg" alt="Grid Booklet">
+        <img src="image/Design/Clark_DailyPosterFinal.png" alt="Daily Poster">
+        <img src="image/Design/INFOGRAPHIC.png" alt="Infographic">
+      </div>
+      <div class="detail-info">
+        <p>Typography based projects from various courses and personal work.</p>
+        <div class="tags">
+          <span>Type</span>
+          <span>Lettering</span>
+          <span>Layout</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="detail-overlay" id="detail-logo-projects">
+    <div class="detail-top">
+      <a class="back-link" href="#page-design">&#8592; Back</a>
+      <h2>Logo Projects</h2>
+      <p class="detail-meta">Branding &middot; 2024</p>
+    </div>
+    <div class="detail-layout">
+      <div class="detail-gallery">
+        <img src="image/Design/Stationary/s5.webp" alt="Stationery 4">
+        <img src="image/Design/Clark_Stationary.png" alt="Stationery 1">
+        <img src="image/Design/Clark_Stationary2.png" alt="Stationery 2">
+        <img src="image/Design/Stationary/s1.webp" alt="Stationery 4">
+        <img src="image/Design/Stationary/s2.webp" alt="Stationery 4">
+        <img src="image/Design/Stationary/s3.webp" alt="Stationery 4">
+        <img src="image/Design/Stationary/s4.webp" alt="Stationery 4">
+        <img src="image/Design/Identity/i1.webp" alt="Stationery 3">
+        <img src="image/Design/Identity/i2.webp" alt="Stationery 4">
+        <img src="image/Design/Identity/i3.webp" alt="Stationery 4">
+        <img src="image/Design/Identity/i4.webp" alt="Stationery 4">
+      </div>
+      <div class="detail-info">
+        <p>A suite of logo and branding projects showcasing identity systems, wordmarks, and brand collateral design work.</p>
+        <div class="tags">
+          <span>Logo</span>
+          <span>Identity</span>
+          <span>Brand</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="detail-overlay" id="detail-rebrand">
+    <div class="detail-top">
+      <a class="back-link" href="#page-design">&#8592; Back</a>
+      <h2>Rebrand Project</h2>
+      <p class="detail-meta">Branding &middot; 2023</p>
+    </div>
+    <div class="detail-layout">
+      <div class="detail-gallery">
+        <img src="image/Design/Rebrand/r31.webp" alt="Rebrand Project">
+        <img src="image/Design/Rebrand/r30.webp" alt="Rebrand Project">
+        <img src="image/Design/Rebrand/r29.webp" alt="Rebrand Project">
+        <img src="image/Design/Rebrand/r28.webp" alt="Rebrand Project">
+        <img src="image/Design/Rebrand/r27.webp" alt="Rebrand Project">
+        <img src="image/Design/Rebrand/r26.webp" alt="Rebrand Project">
+        <img src="image/Design/Rebrand/r25.webp" alt="Rebrand Project">
+        <img src="image/Design/Rebrand/r24.webp" alt="Rebrand Project">
+        <img src="image/Design/Rebrand/r23.webp" alt="Rebrand Project">
+        <img src="image/Design/Rebrand/r22.webp" alt="Rebrand Project">
+        <img src="image/Design/Rebrand/r21.webp" alt="Rebrand Project">
+        <img src="image/Design/Rebrand/r20.webp" alt="Rebrand Project">
+        <img src="image/Design/Rebrand/r19.webp" alt="Rebrand Project">
+        <img src="image/Design/Rebrand/r18.webp" alt="Rebrand Project">
+        <img src="image/Design/Rebrand/r17.webp" alt="Rebrand Project">
+        <img src="image/Design/Rebrand/r16.webp" alt="Rebrand Project">
+        <img src="image/Design/Rebrand/r15.webp" alt="Rebrand Project">
+        <img src="image/Design/Rebrand/r14.webp" alt="Rebrand Project">
+        <img src="image/Design/Rebrand/r13.webp" alt="Rebrand Project">
+        <img src="image/Design/Rebrand/r12.webp" alt="Rebrand Project">
+        <img src="image/Design/Rebrand/r11.webp" alt="Rebrand Project">
+        <img src="image/Design/Rebrand/r10.webp" alt="Rebrand Project">
+        <img src="image/Design/Rebrand/r9.webp" alt="Rebrand Project">
+        <img src="image/Design/Rebrand/r8.webp" alt="Rebrand Project">
+        <img src="image/Design/Rebrand/r7.webp" alt="Rebrand Project">
+        <img src="image/Design/Rebrand/r6.webp" alt="Rebrand Project">
+        <img src="image/Design/Rebrand/r5.webp" alt="Rebrand Project">
+        <img src="image/Design/Rebrand/r4.webp" alt="Rebrand Project">
+        <img src="image/Design/Rebrand/r3.webp" alt="Rebrand Project">
+        <img src="image/Design/Rebrand/r2.webp" alt="Rebrand Project">
+        <img src="image/Design/Rebrand/r1.webp" alt="Rebrand Project">
+      </div>
+      <div class="detail-info">
+        <p>Comprehensive rebrand strategy and visual system redesign, showcasing updated branding direction and strategic identity work.</p>
+        <div class="tags">
+          <span>Branding</span>
+          <span>Strategy</span>
+          <span>Identity</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="detail-overlay" id="detail-starbridge">
+    <div class="detail-top">
+      <a class="back-link" href="#page-design">&#8592; Back</a>
+      <h2>Starbridge</h2>
+      <p class="detail-meta">Concept Design &middot; 2024</p>
+    </div>
+    <div class="detail-layout">
+      <div class="detail-gallery">
+        <img src="image/Design/SHIRTFORDADETC.png" alt="Starbridge">
+      </div>
+      <div class="detail-info">
+        <p>Some work I have done for family members and friends. More to come!</p>
+        <div class="tags">
+          <span>Worldbuilding</span>
+          <span>Concept Art</span>
+          <span>Sci-Fi</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="detail-overlay" id="detail-drawing">
+    <div class="detail-top">
+      <a class="back-link" href="#page-fineart">&#8592; Back</a>
+      <h2>Drawing</h2>
+      <p class="detail-meta">Drawing &middot; 2024</p>
+    </div>
+    <div class="detail-layout">
+      <div class="detail-gallery">
+        <img src="image/Fine Art/DRAWING1FIRSTPROJECT.png" alt="Hand Study">
+        <img src="image/Fine Art/DRAWING1MASTERSTUDY.png" alt="Master Study">
+      </div>
+      <div class="detail-info">
+        <p>Graphite and pencil drawing explorations from my Drawing 1 and 2 class at Delta College featuring a master study of John Singer Sargeant and my own hands.</p>
+        <div class="tags">
+          <span>Graphite</span>
+          <span>Pencil</span>
+          <span>Study</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="detail-overlay" id="detail-figure-drawing">
+    <div class="detail-top">
+      <a class="back-link" href="#page-fineart">&#8592; Back</a>
+      <h2>Figure Drawing</h2>
+      <p class="detail-meta">Drawing &middot; 2025</p>
+    </div>
+    <div class="detail-layout">
+      <div class="detail-gallery">
+        <img src="image/Fine Art/FIGUREDRAWINGPROMETHEUS.jpg" alt="1st Project">
+        <img src="image/Fine Art/FIGUREDRAWINGINNERSCARE.jpg" alt="2nd Project">
+      </div>
+      <div class="detail-info">
+        <p>Figure and tonal studies in charcoal and graphite. I focused on gesture, proportion, and capturing the human form and mainly used charcoal as my medium.</p>
+        <div class="tags">
+          <span>Charcoal</span>
+          <span>Figure</span>
+          <span>Life Drawing</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="detail-overlay" id="detail-printmaking">
+    <div class="detail-top">
+      <a class="back-link" href="#page-fineart">&#8592; Back</a>
+      <h2>Printmaking</h2>
+      <p class="detail-meta">Printmaking &middot; 2025</p>
+    </div>
+    <div class="detail-layout">
+      <div class="detail-gallery">
+        <img src="image/Fine Art/PRINTMAKINGALIEN.jpg" alt="Print 1">
+        <img src="image/Fine Art/PRINTMAKINGSPECIMEN.jpg" alt="Print 2">
+        <img src="image/Fine Art/PRINTMAKINGKAIJU.jpg" alt="Print 3">
+      </div>
+      <div class="detail-info">
+        <p>Relief, screen print and lithography explorations featuring some of my favorite media. Using ink and pressure to create layered, textured imagery.</p>
+        <div class="tags">
+          <span>Relief</span>
+          <span>Ink</span>
+          <span>Screen Print</span>
+          <span>Lithography</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="detail-overlay" id="detail-2d">
+    <div class="detail-top">
+      <a class="back-link" href="#page-fineart">&#8592; Back</a>
+      <h2>2D</h2>
+      <p class="detail-meta">2D Media &middot; 2024</p>
+    </div>
+    <div class="detail-layout">
+      <div class="detail-gallery">
+        <img src="image/Fine Art/ACRYLICPORTRAIT.png" alt="Acrylic Portrait">
+      </div>
+      <div class="detail-info">
+        <p>Acrylic painting of myself. This was an assignment at Delta College in my 2D Media course to work on different color values in a simplified way.</p>
+        <div class="tags">
+          <span>Acrylic</span>
+          <span>Design</span>
+          <span>Portrait</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="detail-overlay" id="detail-painting">
+    <div class="detail-top">
+      <a class="back-link" href="#page-fineart">&#8592; Back</a>
+      <h2>Oil Painting</h2>
+      <p class="detail-meta">Painting &middot; 2026</p>
+    </div>
+    <div class="detail-layout">
+      <div class="detail-gallery">
+        <img src="image/Fine Art/Clark_SelfPortraitOil.jpg" alt="Self Portrait">
+        <img src="image/Fine Art/Clark_SelfPortraitBeginning.jpg" alt="Beginning Sketch">
+        <img src="image/Fine Art/SelfportraitReferencePhoto.jpg" alt="Reference">
+        <img src="image/Fine Art/Clark_GreyscaleOil.jpg" alt="Still Life 1">
+        <img src="image/Fine Art/Clark_StillLifeOil.jpg" alt="Still Life 2">
+      </div>
+      <div class="detail-info">
+        <p>Oil paintings from my intro to painting course. We stretched our own canvases. Besides the first project being a 16x20 in, the rest were all 20x24 in.</p>
+        <div class="tags">
+          <span>Oil</span>
+          <span>Canvas</span>
+          <span>Portraiture</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    const canvas = document.getElementById('galaxy');
+    const ctx = canvas.getContext('2d');
+    let stars = [];
+
+    function resize() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+
+    function makeStars() {
+      stars = [];
+      for (let i = 0; i < 350; i++) {
+        const angle = Math.random() * Math.PI * 2;
+        const dist = Math.pow(Math.random(), 0.5) * Math.min(canvas.width, canvas.height) * 0.55;
+        stars.push({
+          angle: angle,
+          dist: dist,
+          size: Math.random() * 1.4 + 0.3,
+          opacity: Math.random() * 0.7 + 0.15,
+          speed: (Math.random() * 0.00015 + 0.00005),
+          purple: Math.random() < 0.25
+        });
+      }
+    }
+
+    function draw() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      const cx = canvas.width / 2;
+      const cy = canvas.height / 2;
+
+      for (let s of stars) {
+        s.angle += s.speed;
+        const x = cx + Math.cos(s.angle) * s.dist;
+        const y = cy + Math.sin(s.angle) * s.dist;
+
+        ctx.beginPath();
+        ctx.arc(x, y, s.size, 0, Math.PI * 2);
+        ctx.fillStyle = s.purple
+          ? `rgba(180, 160, 255, ${s.opacity})`
+          : `rgba(255, 255, 255, ${s.opacity})`;
+        ctx.fill();
+      }
+
+      requestAnimationFrame(draw);
+    }
+
+    resize();
+    makeStars();
+    draw();
+
+    window.addEventListener('resize', function() {
+      resize();
+      makeStars();
+    });
+  </script>
+
 </body>
 </html>
